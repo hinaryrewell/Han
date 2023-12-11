@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg949\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww23680\viewh14040\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # COMSC 230 Final Project\
+\
+# Readme for \'91The Origin of Wine\'92\
+\
+# Member\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #	\'95	Wanjiku Maina\
+#	\'95	Victoria DeBarros\
+#	\'95	Guhan Jeong\
+#	\'95	Nate Lopes\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+# Files\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #	\'95	wine.py\
+#	\'95	wine2.py\
+#	\'95	wine.csv\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+# Environment\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #	\'95	MacBook Pro 15-inch 2018\
+#	\'95	CPU: 2.2 GHz 6-core Intel Core i7\
+#	\'95	RAM: 16GB 2400 MHz DDR4\
+#	\'95	OS: Mac Sonoma 14.1.2\
+#	\'95	Program: Visual Studio Code(1.84.2 Universal)\
+#	\'95	Python: pip 23.3.1 (python 3.11)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+# Usage: Run code with csv file in the same directory\
+\
+# wine.py\
+# File Overview\
+#	\'95	File Name: wine.py\
+#	\'95	Primary Function: Exploratory Data Analysis (EDA), preprocessing, and clustering of a wine dataset.\
+#	\'95	Libraries Used: numpy, pandas, matplotlib, seaborn, sklearn.\
+# Detailed Content\
+#	\'95	Data Loading and Inspection: Loads the wine.csv file and displays the first five rows and summary information of the data.\
+#	\'95	Exploratory Data Analysis (EDA): Visualizes data distribution and correlations using histograms, box plots, and heatmaps.\
+#	\'95	Data Preprocessing: Handles missing and duplicate values, detects and removes outliers, and standardizes the data.\
+#	\'95	Principal Component Analysis (PCA): Performs PCA for dimensionality reduction and visualizes the results in a 2D scatter plot.\
+#	\'95	K-Means Clustering: Applies the K-Means algorithm for various numbers of clusters, calculates inertia and silhouette scores for each cluster count, determines the optimal number of clusters, and visualizes the results.\
+# Key Functions and Methods\
+#	\'95	pd.read_csv(): Loads CSV files.\
+#	\'95	df.head(), df.info(): Provides summary information of the data.\
+#	\'95	df.describe(), df.hist(), df.plot(): Data statistics and visualization.\
+#	\'95	sns.heatmap(): Visualizes correlation heatmaps.\
+#	\'95	StandardScaler(), PCA(), KMeans(): Functions for data preprocessing and modeling.\
+\
+# wine2.py\
+# File Overview\
+#	\'95	File Name: wine2.py\
+#	\'95	Primary Function: Regression analysis and visualization regarding wine quality.\
+#	\'95	Libraries Used: numpy, pandas, statsmodels, matplotlib, seaborn.\
+# Detailed Content\
+#	\'95	Data Loading and Preparation: Loads the wine.csv file and prepares independent variables (X) and dependent variable (y) for predicting wine quality.\
+#	\'95	Regression Model Creation and Summary: Creates a linear regression model and outputs a summary of the model. This helps identify factors influencing wine quality.\
+#	\'95	Data Preprocessing: Handles missing values and classifies wines into 'good wine' and 'bad wine' based on quality scores.\
+#	\'95	Data Visualization: Generates histograms for various variables and visualizes them with different colors based on wine quality. Displays descriptive statistics for each variable.\
+# Key Functions and Methods\
+#	\'95	pd.read_csv(): Loads CSV files.\
+#	\'95	sm.OLS(): Creates a linear regression model.\
+#	\'95	sns.histplot(): Generates and visualizes histograms for each variable.\
+#	\'95	plt.figure(), plt.legend(), plt.title(): Detailed settings for visualizations.\
+\
+# wine.csv\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #	\'95	File Name: wine.csv\
+# Description\
+#	\'95	This CSV file contains a dataset on wine characteristics and quality ratings. It is structured for analysis or machine learning in enology.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 # Columns\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #	\'95	Fixed Acidity: Measured in g/dm3, indicates acidity levels.\
+#	\'95	Volatile Acidity: Measured in g/dm3, amount of acetic acid, affects smell.\
+#	\'95	Citric Acid: Measured in g/dm3, used for 'freshness' and flavor.\
+#	\'95	Residual Sugar: Measured in g/dm3, sugar remaining after fermentation.\
+#	\'95	Chlorides: Measured in g/dm3, amount of salt.\
+#	\'95	Free Sulfur Dioxide: Measured in mg/dm3, prevents microbial growth and oxidation.\
+#	\'95	Total Sulfur Dioxide: Measured in mg/dm3, total amount of SO2.\
+#	\'95	Density: Measured in g/cm3, density of the wine.\
+#	\'95	pH: Scale from 0 to 14, describes acidity or basicity.\
+#	\'95	Sulphates: Measured in g/dm3, sulphate compounds, affects SO2 levels.\
+#	\'95	Alcohol: Alcohol content in percentage volume.\
+#	\'95	Quality: Scale from 0 to 10, rating of wine quality.\
+# Note\
+#	\'95	g/dm3 stands for grams per cubic decimeter, mg/dm3 for milligrams per cubic decimeter, and g/cm3 for grams per cubic centimeter.}
